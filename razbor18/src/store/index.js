@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import TestASD from './modules/test'
 
 Vue.use(Vuex)
 
@@ -12,7 +13,9 @@ const store = new Vuex.Store({
   //     ]
   //   })
   // ],
-  modules: {},
+  modules: {
+      TestASD
+  },
   state: {
     aas: 'a2222222sd'
   },
