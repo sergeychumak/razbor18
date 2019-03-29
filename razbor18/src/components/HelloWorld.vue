@@ -22,8 +22,7 @@
 </template>
 
 <script>
-
-    // import { db, asd } from '../main'
+    import { db } from '../main'
     export default {
         name: 'HelloWorld',
         data () {
@@ -34,8 +33,9 @@
             }
         },
         // firebase () {
+        //     console.log(99)
         //     return {
-        //         books: asd
+        //     //    books: asd
         //     }
         // },
         // firestore () {
@@ -50,6 +50,92 @@
             // deleteLocation (id) {
             //     db.collection('locations').doc(id).delete()
             // }
+        },
+
+        mounted1: function(){
+
+            // var a = db.collection('test')
+            // console.log(a)
+
+            console.log(55)
+            var testRef = db.ref('test')
+            testRef.once("value")
+                .then(function(snapshot) {
+                    console.log(snapshot)
+                    // var key = snapshot.key; // "ada"
+                    // var childKey = snapshot.child("name/last").key; // "last"
+                });
+        },
+
+        mounted: function () {
+
+            // console.log( db.collection('test').doc('car').get().then(res=> console.log(res)))
+            //console.log( db.collection('test').doc('car').collection('hi').doc('NNd4mwHjyH7OGNK2ytSb') )
+
+            // console.log( db.collection('test').doc('mot') )
+
+            db.collection('test').get()
+            .then(res=> {
+                res.forEach((doc) => {
+                    console.log(doc.id)
+                    console.log(doc.data())
+                })
+            })
+            .catch(e=>{
+                console.log(e)
+            })
+
+            db.collection('test1').get()
+                .then(res => {
+
+                    // console.log(res.docs)
+
+                    res.forEach((doc) => {
+
+                        console.log('---------------------------------------------------')
+
+                        console.log(doc.exists)
+                        console.log(doc.id)
+                        console.log(doc.metadata)
+                        console.log(doc.ref.collection(doc.id).get().then(res1=> console.log(res1)))
+                        console.log(doc.data())
+                        // console.log(doc.get())
+                        // console.log(doc.isEqual())
+
+                        console.log('---------------------------------------------------')
+                        // let a = db.collection('test').doc(doc.id)
+                        //
+                        // console.log(a)
+
+                        //console.log(doc.data())
+                        //console.log(doc.ref.hasChildren())
+
+                        // console.log(doc.ref)
+                        // doc.getCollections().then(collections => {
+                        //     for (let collection of collections) {
+                        //         console.log(`Found subcollection with id: ${collection.id}`);
+                        //     }
+                        // });
+
+                        // console.log( )
+                        //     console.log( db.collection('test').get('car').collection.length )
+                    })
+
+                    // db.collection('test')
+
+                    // const values = res.docs.map(el=>{
+                    //     // console.log( db.collection('test').get('/mot'))
+                    //     return { id: el.id, ...el.data()}
+                    // })
+                    // console.table(values)
+
+                    // res.forEach((doc) => {
+                    //     const values =
+                    //     // console.log(doc.collection(doc.id))
+                    //     // console.log(doc.id, ' => ', doc.data())
+                    // })
+                    // console.log( res)
+                })
         }
     }
 </script>

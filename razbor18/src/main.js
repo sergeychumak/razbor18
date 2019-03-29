@@ -8,17 +8,27 @@ import 'firebase/firestore'
 import 'firebase/database'
 Vue.use(VueFire)
 
+// firebase.auth() — Authentication
+// firebase.storage() — Cloud Storage
+// firebase.database() — Realtime Database
+// firebase.firestore() — Cloud Firestore
+// firebase.messaging() — Cloud Messaging
+// firebase.functions() — Cloud Functions
+
+
 import firebaseConfig from './firebase_config'
 firebase.initializeApp(firebaseConfig)
-const firestore = firebase.firestore()
-const settings = { }
-firestore.settings(settings)
 
-let db1 = firebase.database()
-let booksRef = db1.ref('locations')
 
-export const db = firestore
-export const asd = booksRef
+// let db = firebase.database()
+// export const db = firebase.database()
+export const db = firebase.firestore()
+
+
+// let booksRef = db1.ref('locations')
+// export const asd = booksRef
+
+// const firestore = firebase.firestore()
 
 
 Vue.config.productionTip = false
