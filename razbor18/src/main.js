@@ -2,9 +2,11 @@ import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'vuetify/dist/vuetify.min.css'
 
 
+
 import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
+import router from './router'
 import Vuetify from 'vuetify'
 
 
@@ -25,20 +27,8 @@ Vue.use(VueFire)
 // firebase.functions() — Cloud Functions
 
 
-import firebaseConfig from './firebase_config'
-firebase.initializeApp(firebaseConfig)
-
-
-// let db = firebase.database()
-
-// export const db = firebase.firestore()
-
-
-// let booksRef = db1.ref('locations')
-// export const asd = booksRef
-
-
-// const firestore = firebase.firestore()
+// import firebaseConfig from './firebase_config'
+// firebase.initializeApp(firebaseConfig)
 
 
 Vue.config.productionTip = false
@@ -46,9 +36,10 @@ Vue.config.productionTip = false
 Vue.use(Vuetify)
 
 
-export const db = firebase.database()
+// export const db = firebase.database()
 
 new Vue({
   store,
+  router,
   render: h => h(App),
 }).$mount('#app')
