@@ -1,7 +1,6 @@
 import 'material-design-icons-iconfont/dist/material-design-icons.css'
 import 'vuetify/dist/vuetify.min.css'
-
-
+import './assets/sass/main.sass'
 
 import Vue from 'vue'
 import App from './App.vue'

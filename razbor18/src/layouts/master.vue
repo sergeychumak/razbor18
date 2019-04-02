@@ -2,7 +2,7 @@
 <div>
     <div class="device-notification">
       <a class="device-notification--logo" href="#0">
-        <img src="assets/img/logo.png" alt="Global">
+        <img src="img/logo.png" alt="Global">
         <p>Global</p>
       </a>
       <p class="device-notification--message">Global has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
@@ -13,7 +13,7 @@
           <div class="l-wrapper">
             <header class="header">
               <a class="header--logo" href="#0">
-                <img src="assets/img/logo.png" alt="Global">
+                <img src="img/logo.png" alt="Global">
                 <p>Global</p>
               </a>
               <button class="header--cta cta">Hire Us</button>
@@ -43,7 +43,7 @@
                   </svg>
                       <span class="btn-background"></span>
                     </button>
-                    <img src="assets/img/introduction-visual.png" alt="Welcome">
+                    <img src="img/introduction-visual.png" alt="Welcome">
                   </div>
                   <div class="intro--options">
                     <a href="#0">
@@ -69,7 +69,7 @@
                       <li class="slider--item slider--item-left">
                         <a href="#0">
                           <div class="slider--item-image">
-                            <img src="assets/img/work-victory.jpg" alt="Victory">
+                            <img src="img/work-victory.jpg" alt="Victory">
                           </div>
                           <p class="slider--item-title">Victory</p>
                           <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -78,7 +78,7 @@
                       <li class="slider--item slider--item-center">
                         <a href="#0">
                           <div class="slider--item-image">
-                            <img src="assets/img/work-metiew-smith.jpg" alt="Metiew and Smith">
+                            <img src="img/work-metiew-smith.jpg" alt="Metiew and Smith">
                           </div>
                           <p class="slider--item-title">Metiew &amp; Smith</p>
                           <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -87,7 +87,7 @@
                       <li class="slider--item slider--item-right">
                         <a href="#0">
                           <div class="slider--item-image">
-                            <img src="assets/img/work-alex-nowak.jpg" alt="Alex Nowak">
+                            <img src="img/work-alex-nowak.jpg" alt="Alex Nowak">
                           </div>
                           <p class="slider--item-title">Alex Nowak</p>
                           <p class="slider--item-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do.</p>
@@ -127,7 +127,7 @@
                     </svg>
                   </span>
                     </a>
-                    <img src="assets/img/about-visual.png" alt="About Us">
+                    <img src="img/about-visual.png" alt="About Us">
                   </div>
                   <div class="about--options">
                     <a href="#0">
