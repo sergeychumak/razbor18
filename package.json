@@ -1,0 +1,15 @@
+{
+  "name": "razbor18-nodejs-image-demo",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Sergey Chumak <sergeychumakru@gmail.com>",
+  "license": "MIT",
+  "main": "app.js",
+  "keywords": [
+    "nodejs",
+    "express"
+  ],
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
