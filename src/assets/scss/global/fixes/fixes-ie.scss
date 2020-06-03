@@ -1,0 +1,41 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  input::-ms-clear {
+    display: none;
+  }
+
+  .discount-sticker--rhombus {
+    padding: 1px 0 !important;
+  }
+
+  .product-block-images__element {
+    margin-right: 14px !important;
+  }
+
+  .product-sizes {
+
+    .app-radio-size {
+      flex-basis: 33%;
+    }
+  }
+
+  .app-popup--size_full .app-popup__window {
+    display: block !important;
+    overflow-y: auto;
+  }
+
+  .order-summary__scroll-to-form-btn {
+    display: none !important;
+  }
+
+  .order-summary__submit-order {
+    display: block !important;
+  }
+
+  .order-summary__info {
+    display: block !important;
+  }
+
+  .order-form__datepicker {
+    flex-basis: calc(50% - 20px) !important;
+  }
+}

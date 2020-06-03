@@ -1,0 +1,55 @@
+// BORDER
+
+.border-gray {
+  box-shadow: 1px 0 0 0 $gray,
+              0 1px 0 0 $gray,
+              1px 1px 0 0 $gray,
+              1px 0 0 0 $gray inset,
+              0 1px 0 0 $gray inset;
+}
+
+.border-dark-gray {
+  box-shadow: 1px 0 0 0 $dark_gray,
+              0 1px 0 0 $dark_gray,
+              1px 1px 0 0 $dark_gray,
+              1px 0 0 0 $dark_gray inset,
+              0 1px 0 0 $dark_gray inset;
+}
+
+.border-dark_blue {
+  box-shadow: 1px 0 0 0 $dark_blue_hover,
+              0 1px 0 0 $dark_blue_hover,
+              1px 1px 0 0 $dark_blue_hover,
+              1px 0 0 0 $dark_blue_hover inset,
+              0 1px 0 0 $dark_blue_hover inset;
+}
+
+.shadow {
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .16);
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
+}
+
+.custom-scroll {
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark_blue;
+    border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $light_gray;
+    border-radius: 4px;
+  }
+}

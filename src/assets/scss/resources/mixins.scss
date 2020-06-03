@@ -1,0 +1,17 @@
+@mixin breakpoint( $breakpointName ) {
+  @each $el in $breakpoints {
+    $name: map-get($el, "name");
+    $breakpoint: map-get($el, "breakpoint");
+    @if $breakpointName == "mobile" {
+      @content;
+    }
+    @else if $name == $breakpointName {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    }
+    @else {
+
+    }
+  }
+}

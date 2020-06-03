@@ -1,0 +1,45 @@
+// обертка для блоков, занимающих всю ширину вьюпорта и не использующих центровщик с сеткой
+// компенсирует отрицательные отступы сетки, предотвращая горизонтальный скролл
+.container {
+  overflow-x: hidden;
+}
+
+// блок центровщик контента, предотвращающий расширение контента
+// обязательная обертка для любого блока с контентом
+@each $el in $breakpoints {
+  $breakpoint: map-get($el, "breakpoint");
+  $name: map-get($el, "name");
+  $width: map-get($el, "width");
+  @if $breakpoint == null {
+    // default breakpoint
+    .centered {
+      width: #{$width};
+      max-width: #{$maxWidthContainer};
+      margin: 0 auto;
+    }
+    .centered-0 {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+    }
+  }
+  @else {
+    @media (min-width: $breakpoint) {
+      .centered {
+        width: #{$width};
+        max-width: #{$maxWidthContainer};
+        margin: 0 auto;
+      }
+      .centered-#{$name} {
+        width: #{$width};
+        max-width: #{$maxWidthContainer};
+        margin: 0 auto;
+      }
+      .centered-0-#{$name} {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto;
+      }
+    }
+  }
+}

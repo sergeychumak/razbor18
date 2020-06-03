@@ -1,0 +1,48 @@
+// COLORS
+$white: #fff;
+$black: #333;
+$blue: #1486c7;
+$red: #c90100;
+$gray: #d6d6d6;
+$dark_gray: #b1b1b1;
+$light_gray: #e7e7e7;
+$lightest_gray: #f6f6f6;
+$dark_blue: #004b75;
+$dark_blue_hover: #016298;
+$overlay: rgba(0, 0, 0, .7);
+
+// BORDER
+$border-white: $white;
+
+// OUTLINE
+$outline: rgba(0, 103, 244, .247) auto 2px;
+
+// Z-INDEXES
+$z-popup: 5000;
+$z-overlay: 4900;
+$z-header: 4800;
+$z-local: 1;
+$z-local-2: 2;
+
+// GRID
+
+// ограничения границ макета с минимальной и максимальной стороны вне зависимости от breakpoint
+$minWidthContainer: 320px;
+$maxWidthContainer: 1360px;
+
+// список breakpoints
+$breakpoints:
+  // default breakpoint
+  (
+    "width" : 90%
+  ),
+  (
+    "breakpoint": 768px,
+    "name": "tablet",
+    "width" : 85.417%
+  ),
+  (
+    "breakpoint": 1080px,
+    "name": "desktop",
+    "width" : 95%
+  );

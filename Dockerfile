@@ -1,17 +1,17 @@
-FROM node:12-alpine
+FROM node:12
 
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
-WORKDIR /home/node/app
+WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-USER node
-
 RUN npm install
 
-COPY --chown=node:node . .
+COPY . .
 
-EXPOSE 8080
+RUN npm run-script build
 
-CMD [ "node", "app.js" ]
+EXPOSE 80
+
+ENV NODE_SERVER=prod
+
+CMD [ "node", "server/server.js" ]

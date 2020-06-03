@@ -1,0 +1,8 @@
+@supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) {
+  .body {
+
+    &--open-popup {
+      padding-right: 0 !important;
+    }
+  }
+}
